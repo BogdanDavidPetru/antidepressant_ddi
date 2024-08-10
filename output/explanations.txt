@@ -1,0 +1,22 @@
+Decision path for binary_interaction:
+Second drug does not contain CCCN(CC)CCCNCC1:C:C:C:C:C:1
+Second drug does not contain C:C:C(:CCCNCCCN(CC)CC):C(:N):C:C
+Second drug does not contain CCNCCCCNC:CCCC1:C:C:C:C:C:1
+Second drug does not contain CNCCCCNCCCCC1:C:C:C:C:C:1
+Second drug does not contain CNCCC=C(C1:C:C:C:C:C:1)C1:C:C:C:C:C:1
+First drug does not contain CCCC:C:C:C:C:CN(C:C:C:C:C)CC
+First drug does not contain C:C:C(:C:C:CC(:C:N):C:C:CC)NCCCO
+Second drug does not contain C:C:C:C:C:C:N(C):CCCN(CC)CC:N:C
+First drug does not contain C:C:C:CCCCNCCCC1:C:C:C:C:C:1
+Second drug does not contain C:C:C:CCCCN(CC)CCCC:C:C:C
+Second drug does not contain CCCC(:CC):N(CCCN(C)C):C1:C:C:C:C:C:1
+Second drug does not contain C:C:CCNCN(CCC)CC1:C:C:C:C:C:1
+First drug does not contain C:C:C:C:C:CC(C)(CCC)C(:C:C):C:C:C
+Second drug does not contain CCN(C)CCCN(CC1:C:C:C(F):C:C:1)C(=O)NCC1:C:C:C:C:C:1
+Second drug does not contain CCCCCCCCCCC1:C:C:C(O):C:C:1
+Second drug does not contain CCN(C)C:C:C:C(:C:C)N(C)CCCNC=O
+Second drug does not contain CCC(CC:C:C:C:C:C:C:N)N(C)CCC
+First drug does not contain CC:C:C:C:C:CC(CC)C1:C:C:C:C:C:1
+Second drug does not contain C:C:C:C(:C:N)CCNCCCN(CC)CC
+Second drug does not contain C:C:C:C:C:CC(=O)NCCCCCNCC
+Leaf node 20 reached

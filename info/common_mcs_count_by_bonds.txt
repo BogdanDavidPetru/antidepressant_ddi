@@ -1,0 +1,137 @@
+Number of MCS with simple length 12 is 1985
+Number of MCS with simple length 14 is 1587
+Number of MCS with simple length 13 is 1860
+Number of MCS with simple length 11 is 2189
+Number of MCS with simple length 9 is 1410
+Number of MCS with simple length 15 is 1288
+Number of MCS with simple length 10 is 2049
+Number of MCS with simple length 16 is 993
+Number of MCS with simple length 6 is 350
+Number of MCS with simple length 1 is 6
+Number of MCS with simple length 8 is 854
+Number of MCS with simple length 7 is 566
+Number of MCS with simple length 4 is 70
+Number of MCS with simple length 23 is 44
+Number of MCS with simple length 17 is 768
+Number of MCS with simple length 2 is 9
+Number of MCS with simple length 18 is 383
+Number of MCS with simple length 25 is 29
+Number of MCS with simple length 3 is 10
+Number of MCS with simple length 5 is 160
+Number of MCS with simple length 0 is 2
+Number of MCS with simple length 19 is 236
+Number of MCS with simple length 27 is 11
+Number of MCS with simple length 20 is 180
+Number of MCS with simple length 21 is 121
+Number of MCS with simple length 22 is 67
+Number of MCS with simple length 24 is 28
+Number of MCS with simple length 30 is 4
+Number of MCS with simple length 26 is 8
+Number of MCS with simple length 28 is 7
+Number of MCS with simple length 49 is 1
+Number of MCS with simple length 31 is 4
+Number of MCS with simple length 45 is 1
+Number of MCS with simple length 33 is 1
+Number of MCS with simple length 29 is 3
+Number of MCS with simple length 46 is 1
+Number of MCS with simple length 34 is 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Number of MCS with weighted length 28 is 836
+Number of MCS with weighted length 38 is 408
+Number of MCS with weighted length 27 is 798
+Number of MCS with weighted length 34 is 513
+Number of MCS with weighted length 23 is 520
+Number of MCS with weighted length 44 is 290
+Number of MCS with weighted length 15 is 165
+Number of MCS with weighted length 33 is 501
+Number of MCS with weighted length 39 is 390
+Number of MCS with weighted length 22 is 438
+Number of MCS with weighted length 40 is 317
+Number of MCS with weighted length 43 is 290
+Number of MCS with weighted length 7 is 145
+Number of MCS with weighted length 2 is 8
+Number of MCS with weighted length 32 is 590
+Number of MCS with weighted length 31 is 709
+Number of MCS with weighted length 57 is 44
+Number of MCS with weighted length 25 is 868
+Number of MCS with weighted length 24 is 730
+Number of MCS with weighted length 30 is 710
+Number of MCS with weighted length 10 is 136
+Number of MCS with weighted length 29 is 810
+Number of MCS with weighted length 4 is 32
+Number of MCS with weighted length 35 is 543
+Number of MCS with weighted length 16 is 161
+Number of MCS with weighted length 42 is 270
+Number of MCS with weighted length 26 is 903
+Number of MCS with weighted length 8 is 143
+Number of MCS with weighted length 11 is 127
+Number of MCS with weighted length 12 is 141
+Number of MCS with weighted length 21 is 336
+Number of MCS with weighted length 9 is 103
+Number of MCS with weighted length 13 is 137
+Number of MCS with weighted length 5 is 55
+Number of MCS with weighted length 52 is 99
+Number of MCS with weighted length 17 is 198
+Number of MCS with weighted length 46 is 230
+Number of MCS with weighted length 47 is 249
+Number of MCS with weighted length 19 is 270
+Number of MCS with weighted length 51 is 147
+Number of MCS with weighted length 37 is 404
+Number of MCS with weighted length 36 is 429
+Number of MCS with weighted length 48 is 186
+Number of MCS with weighted length 3 is 8
+Number of MCS with weighted length 41 is 297
+Number of MCS with weighted length 45 is 213
+Number of MCS with weighted length 0 is 2
+Number of MCS with weighted length 61 is 11
+Number of MCS with weighted length 53 is 88
+Number of MCS with weighted length 6 is 122
+Number of MCS with weighted length 1 is 3
+Number of MCS with weighted length 20 is 217
+Number of MCS with weighted length 18 is 230
+Number of MCS with weighted length 14 is 140
+Number of MCS with weighted length 49 is 162
+Number of MCS with weighted length 50 is 148
+Number of MCS with weighted length 55 is 49
+Number of MCS with weighted length 54 is 55
+Number of MCS with weighted length 59 is 25
+Number of MCS with weighted length 58 is 33
+Number of MCS with weighted length 56 is 43
+Number of MCS with weighted length 63 is 3
+Number of MCS with weighted length 64 is 9
+Number of MCS with weighted length 73 is 2
+Number of MCS with weighted length 85 is 1
+Number of MCS with weighted length 62 is 6
+Number of MCS with weighted length 60 is 17
+Number of MCS with weighted length 70 is 3
+Number of MCS with weighted length 67 is 2
+Number of MCS with weighted length 100 is 1
+Number of MCS with weighted length 68 is 6
+Number of MCS with weighted length 78 is 1
+Number of MCS with weighted length 66 is 5
+Number of MCS with weighted length 74 is 1
+Number of MCS with weighted length 80 is 1
+Number of MCS with weighted length 83 is 2
+Number of MCS with weighted length 71 is 1

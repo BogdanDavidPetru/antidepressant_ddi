@@ -1,0 +1,72 @@
+# print("Other interactions: ", another_interaction)
+# print("--------------------DRUGS------------------")
+# print(len(DRUGS))
+# print(DRUGS)
+
+# identified_ddi_file_name = "antidepressants_ddi.txt"
+
+# identified_ddi_file = open(identified_ddi_file_name, "a")
+
+
+# print("--------------------DDI Set------------------")
+#
+# for ddi in identified_ddi:
+#     identified_ddi_file.write(str(ddi))
+# identified_ddi_file.close()
+# print("--------------------DDI List------------------")
+
+# print(len(DDI_list))
+# print(DDI_list.list)
+# drugs_with_interactions = set()
+# with open(known_DDI_file, 'r') as fp:
+#     fp.readline()
+#     for line in fp:
+#         # print(line)
+#         sptlist = line.split()  # line.strip().split('/t')
+#
+#         left_drug = sptlist[0].strip()
+#         right_drug = sptlist[1].strip()
+#         interaction_type = sptlist[2].strip()
+#         if drug_ids.__contains__(left_drug) and drug_ids.__contains__(right_drug):
+#             interactions.append((left_drug, right_drug, interaction_type))
+#             drugs_with_interactions.add(left_drug)
+#             drugs_with_interactions.add(right_drug)
+#
+# for interaction in interactions:
+#     print("Drug 1: %s, Drug 2: %s, interaction: %s" % (interaction[0], interaction[1], interaction[2]))
+#
+# print("Interactions Size: ", len(interactions))
+#
+# filename = "drug_interaction_data_not_valid_antipsychotics.csv"
+# header = ['Drug1', 'Drug2', 'Interaction']
+#
+# already_parsed = set()
+#
+# with open(filename, 'w', newline='') as csvfile:
+#     csvwriter = csv.writer(csvfile)
+#     csvwriter.writerow(header)
+#     for index, drug in enumerate(drug_ids):
+#         for index2, drug2 in enumerate(drug_ids):
+#             if index2 > index:
+#                 interaction_found = False
+#                 for (left_drug, right_drug, interaction_type) in interactions:
+#                     if (left_drug == drug and right_drug == drug2) or (left_drug == drug2 and right_drug == drug):
+#                         interaction_found = True
+#                         break
+#                 if not already_parsed.__contains__((drug, drug2)) and not already_parsed.__contains__((drug2, drug)):
+#                     if interaction_found:
+#                         csvwriter.writerow([drug, drug2, 1])
+#                     else:
+#                         csvwriter.writerow([drug, drug2, 0])
+#                     already_parsed.add((drug, drug2))
+#
+# print('Number of drugs taken into consideration for dataset: ', len(drug_ids))
+# drugs_without_interactions = set()
+#
+# for drug_id in drug_ids:
+#     if not drugs_with_interactions.__contains__(drug_id):
+#         drugs_without_interactions.add(drug_id)
+#
+# print("Drugs without known interaction: ", len(drugs_without_interactions))
+# print(drugs_without_interactions)
+# print(drug_ids)

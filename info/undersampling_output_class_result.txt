@@ -1,0 +1,17 @@
+Number of increase activity cells with value 1: 30
+Number of Decrease activity cells with value 1: 30
+Number of increase effect cells with value 1: 30
+Number of Decrease effect cells with value 1: 30
+Number of Efficacy effect cells with value 1: 30
+Number of Decrease Efficacy cells with value 1: 30
+Number of Other cells with value 1: 30
+
+
+--------------smote oversampling----------------
+Number of increase activity cells with value 1: 21422
+Number of Decrease activity cells with value 1: 21422
+Number of increase effect cells with value 1: 21422
+Number of Decrease effect cells with value 1: 21422
+Number of Efficacy effect cells with value 1: 21422
+Number of Decrease Efficacy cells with value 1: 21422
+Number of Other cells with value 1: 21422

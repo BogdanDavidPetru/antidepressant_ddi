@@ -1,0 +1,8 @@
+dataset 
+
+common mcs nr with size > 15 : 2891
+common mcs nr with size > 16 : 1898
+common mcs nr with size > 17 : 1130
+						> 18 : 747
+						> 19 : 511
+						> 20 : 331
