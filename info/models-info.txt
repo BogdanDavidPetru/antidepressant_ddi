@@ -1,0 +1,109 @@
+Binary classification structural dataset - random forests
+1. with normal dataset -> see screenshots
+2. SMOTE
+
+balanced
+
+Accuracy Score from sklearn:  0.8911741214057508
+Hamming Loss:  0.11
+Confusion matrix
+[[1079  928]
+ [ 162 7847]]
+Report:                precision    recall  f1-score   support
+
+           0       0.87      0.54      0.66      2007
+           1       0.89      0.98      0.94      8009
+
+    accuracy                           0.89     10016
+   macro avg       0.88      0.76      0.80     10016
+weighted avg       0.89      0.89      0.88     10016
+
+--------------------------------
+Simple Decision tree - structural dataset
+
+SMOTE
+
+Accuracy Score from sklearn:  0.8392571884984026
+Hamming Loss:  0.16
+Confusion matrix
+[[1853  154]
+ [1456 6553]]
+Report:                precision    recall  f1-score   support
+
+           0       0.56      0.92      0.70      2007
+           1       0.98      0.82      0.89      8009
+
+    accuracy                           0.84     10016
+   macro avg       0.77      0.87      0.79     10016
+weighted avg       0.89      0.84      0.85     10016
+
+
+no smote, initial dataset
+
+--------------Decision Tree------------------
+Accuracy Score from sklearn:  0.8443672931880761
+Hamming Loss:  0.16
+Confusion matrix
+[[ 258   78]
+ [1222 6795]]
+Report:                precision    recall  f1-score   support
+
+           0       0.17      0.77      0.28       336
+           1       0.99      0.85      0.91      8017
+
+    accuracy                           0.84      8353
+   macro avg       0.58      0.81      0.60      8353
+weighted avg       0.96      0.84      0.89      8353
+
+----------------
+Binary classification subgraph dataset
+
+1. Classic -> no smote?
+balanced
+
+Accuracy Score from sklearn:  0.6386926852627799
+Hamming Loss:  0.36
+Confusion matrix
+[[ 174  162]
+ [2856 5161]]
+Report:                precision    recall  f1-score   support
+
+           0       0.06      0.52      0.10       336
+           1       0.97      0.64      0.77      8017
+
+    accuracy                           0.64      8353
+   macro avg       0.51      0.58      0.44      8353
+weighted avg       0.93      0.64      0.75      8353
+2. SMOTE
+
+balanced - random forest
+
+Accuracy Score from sklearn:  0.602935303514377
+Hamming Loss:  0.4
+Confusion matrix
+[[1267  740]
+ [3237 4772]]
+Report:                precision    recall  f1-score   support
+
+           0       0.28      0.63      0.39      2007
+           1       0.87      0.60      0.71      8009
+
+    accuracy                           0.60     10016
+   macro avg       0.57      0.61      0.55     10016
+weighted avg       0.75      0.60      0.64     10016
+
+3. decision tree smote
+
+Accuracy Score from sklearn:  0.6244009584664537
+Hamming Loss:  0.38
+Confusion matrix
+[[1204  803]
+ [2959 5050]]
+Report:                precision    recall  f1-score   support
+
+           0       0.29      0.60      0.39      2007
+           1       0.86      0.63      0.73      8009
+
+    accuracy                           0.62     10016
+   macro avg       0.58      0.62      0.56     10016
+weighted avg       0.75      0.62      0.66     10016

@@ -14,7 +14,7 @@ def load_mcs():
     common_mcs_list = []
     with open("used_mcs_with_index.txt", 'r') as fp:
         for mcs in fp:
-            mcs_molecule = Chem.MolFromSmarts(mcs.strip())
+            mcs_molecule = Chem.MolFromSmarts(mcs)
             common_mcs_list.append(mcs_molecule)
     return common_mcs_list
 
@@ -54,13 +54,14 @@ def main():
     array = np.array(prediction_input)
     reshape = array.reshape(1, -1)
 
-    prediction = binary_predictor.predict(reshape)
+    prediction = binary_predictor.predict_proba(reshape)
 
-    interaction_result = prediction[0] == 1
-    if interaction_result:
-        print(f"The 2 drugs interact")
-    else:
-        print(f"The 2 drugs do not interact")
+    print(f"Prediction result {prediction}")
+    # interaction_result = prediction[0] == 1
+    # if interaction_result:
+    #     print(f"The 2 drugs interact")
+    # else:
+    #     print(f"The 2 drugs do not interact")
 
     print(f"Please find explanations in {explanations_file}")
     print(f"Please find drug1 chemical structural information in {drug1_structural_information_file}")
