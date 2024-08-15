@@ -1,45 +1,27 @@
-Drug2 contains CN(C)CCC=C(C1:C:C:C:C:C:1)C1:C:C:C:C:C:1
-Drug2 contains CN(C)CCC=C(C1:C:C:C:C:C:1)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:CC(=CCCNC)C1:C:C:C:C:C:1
-Drug2 contains CN(C)CCC=C(C1:C:C:C:C:C:1)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:CC(=CCCN(C)C)C1:C:C:C:C:C:1
-Drug2 contains C:C:C(:C:C)C(=CCCN(C)C)C1:C:C:C:C:C:1C
-Drug2 contains CC1:C:C:C:C:C:1C(=CCCN(C)C)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:CC(=CCCNCC)C1:C:C:C:C:C:1
-Drug2 contains C:CCCC(=CCCNCC)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:CC(=CCCNC)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:CC(=CCCNC)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:CC(=CCCNC)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:CC(=CCCN(C)C)C1:C:C:C:C:C:1
-Drug2 contains CC1:C:C:C:C:C:1CC1:C:C:C:C:C:1C
-Drug2 contains CC1:C:C:C:C:C:1C(=CCCN(C)C)C1:C:C:C:C:C:1C
-Drug2 contains CN(C)CCC=C(C1:C:C:C:C:C:1)C1:C:C:C:C:C:1
-Drug2 contains CC1:C:C:C:C:C:1C(=CCCN(C)C)C1:C:C:C:C:C:1
-Drug2 contains CN(C)CCC=C(C1:C:C:C:C:C:1)C1:C:C:C:C:C:1
-Drug2 contains C:CCCC(=CCCNCC)C1:C:C:C:C:C:1
-Drug2 contains C1=CC2:C:C:C:C:C:2CC2:C:C:C:C:C:21
-Drug2 contains CNCCC=C(C1:C:C:C:C:C:1C)C1:C:C:C:C:C:1C
-Drug2 contains CCN(C)CCC=C(C1:C:C:C:C:C:1)C1:C:C:C:C:C:1
-Drug2 contains CN(C)CCC=C1C2:C:C:C:C:C:2C=CC2:C:C:C:C:C:21
-Drug2 contains C:C:C:CC(=CCCN(C)CC)C1:C:C:C:C:C:1
-Drug2 contains CC:C(:C:C)C(=C1CCN(C)CC1)C1:C:C:C:C:C:1C
-Drug2 contains C:C:C:C:CC(=C(CC)CC)C(:C:C):C(:C)C
-Drug2 contains CC1:C:C:C:C:C:1CC1:C:C:C:C:C:1C
-Drug2 contains CC1:C:C:C:C:C:1C(=CCCN(C)C)C1:C:C:C:C:C:1
-Drug2 contains CN1CCC(=C(C2:C:C:C:C:C:2)C2:C:C:C:C:C:2)CC1
-Drug2 contains CC1:C:C:C:C:C:1CC1:C:C:C:C:C:1C
-Drug2 contains CC1:C:C:C:C:C:1C(=CCCN(C)C)C1:C:C:C:C:C:1C
-Drug2 contains CC1:C:C:C:C:C:1C(=CCCN(C)C)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:CC(=CCCN(C)C)C1:C:C:C:C:C:1
-Drug2 contains CNCCC=C(C1:C:C:C:C:C:1)C1:C:C:C:C:C:1C
-Drug2 contains CNCCC=C(C1:C:C:C:C:C:1)C1:C:C:C:C:C:1
-Drug2 contains C:CCCC(=CCCNC)C1:C:C:C:C:C:1
-Drug2 contains CCC:C(:C:C)C(=C1CCN(C)CC1)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:CC(=CCCNCC)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:C(:C:C)C(C:C:C:C:C:CC)=CCC
-Drug2 contains CCCC(CC)C(CC:C:CC)=C(CC)CC
-Drug2 contains CC(:C:C):C(:C:C)C(C:C:C:C:C:CC)=CC
-Drug2 contains CN(C)CCC=C(C1:C:C:C:C:C:1)C1:C:C:C:C:C:1
-Drug2 contains C:C:C:CC(=CCCN(C)C)C1:C:C:C:C:C:1
-Drug2 contains C:C:C(:C:C)C(=CCCN(C)C)C1:C:C:C:C:C:1C
-Drug2 contains CC(:C:C):C(:C:C)C(C:C:C:C:C:CC)=CC
+Drug2 contains interrupted structure CCC(C=O)CCN.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure CNCCC(C)C=O.cF.ccF.cccccNC=O
+Drug2 contains interrupted structure CCC(C=O)CCNC.cF.ccF.cccccNC=O
+Drug2 contains interrupted structure CCC(C=O)CCNC.cF.cc.ccF.cccccNC=O
+Drug2 contains interrupted structure CCC(C=O)CCN.cF.cc.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCCC.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCC.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCCC.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCCC.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCCC.CN.cNC=O.cc.cc(F)ccF.ccF
+Drug2 contains interrupted structure C=O.CCCC.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure CCC(C=O)CCNC.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCCCC.cc.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCCCC.ccF.ccF.ccF.ccccc(n)NC=O
+Drug2 contains interrupted structure C=O.CCCC.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCC.ccF.ccF.cccccNC(=O)ccF
+Drug2 contains interrupted structure C=O.CCC.ccF.ccF.cccccNC(=O)ccF
+Drug2 contains interrupted structure C=O.CCC.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCC.ccF.ccF.cccccNC(=O)ccF
+Drug2 contains interrupted structure C=O.CCCC.CN.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure CCC(C=O)CCNC.ccC(=O)Nccccc
+Drug2 contains interrupted structure C=O.CCCCNC.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCCCCN.cc(F)ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure CN.ccF.ccF.cccccNC(=O)ccF
+Drug2 contains interrupted structure CNCCC(C)C=O.cF.cc.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCC.ccF.ccF.ccF.cccccNC=O
+Drug2 contains interrupted structure C=O.CCCC.ccF.ccF.ccF.cccccNC=O

@@ -1,78 +1,25 @@
-Drug1 contains CCCCC(CN(C)C)CC1:C:C:C:C:C:1
-Drug1 contains CNC(C)C1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains C:C:C:C:C:CC1CCCCC1CN(C)C
-Drug1 contains C:C:C:C(:C)CC1:C:C:C:C:C:1C(C)NC
-Drug1 contains CCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CNCC:C:C:C:C:CCC1:C:C:C:C:C:1
-Drug1 contains CCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CCCCC(CN(C)C)CC1:C:C:C:C:C:1
-Drug1 contains CC:C:C:C:C:CN(C)C(CN)C:C:C:C:C:C
-Drug1 contains CC:N(C:C:C:C:C:CCC1:C:C:C:C:C:1):C:N
-Drug1 contains CCN(C:C:C:C:C:CCC1:C:C:C:C:C:1)CN
-Drug1 contains NCCNC:C:C:C:C:CCC1:C:C:C:C:C:1
-Drug1 contains CCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains C:C:C:C:C(CC:C:C:C:C):CC(C)N(C)C
-Drug1 contains C:C:C:C:C(CC:C:C:C:C):CC(C)N(C)C
-Drug1 contains C:C:C:CC(CN=CN)NC1:C:C:C:C:C:1
-Drug1 contains C:CN(CN)C(CN)C1:C:C:C:C:C:1CC:C:C:C
-Drug1 contains C:C:CC(CN)N(C)C:C:C:C:C:CCC:C:C
-Drug1 contains C:C:C:C:C:CCC1:C:C:C:C:C:1N(C)CC
-Drug1 contains C:C:C:C:C:CCC1:C:C:C:C:C:1CNC
-Drug1 contains CNCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CN(CC)CCCCCCCC1:C:C:C:C:C:1
-Drug1 contains C:CN(C)C(C)C1:C:C:C:C:C:1CC:C:C:C
-Drug1 contains CCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CC(C(:CC1:C:C:C:C:C:1):C:C:C)N(C)CC
-Drug1 contains NCN(CCN)C1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CCCCC(CC:C1:C:C:C:C:C:1)N(C)CC
-Drug1 contains C:N(:C)C:C(:C:C:C:C)CC1:C:C:C:C:C:1
-Drug1 contains CCNC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains C:NC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains C:C:C:C:C:CCC1:C:C:C:C:C:1N:CC
-Drug1 contains CNCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CNCC:C:C:C:C:CCC1:C:C:C:C:C:1
-Drug1 contains C:C:C:C(CNC):C(:C)CC1:C:C:C:C:C:1
-Drug1 contains C:C:C:C:C(:CN(C)C)CC1:C:C:C:C:C:1
-Drug1 contains CC:C:C:C:C:CNC(C)C1:C:C:C:C:C:1
-Drug1 contains CCC:C:C:C:C:CCC:C:C:C:C:CNC
-Drug1 contains C:C:C:C:C:CCC1:C:C:C:C:C:1NCC
-Drug1 contains CCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CC:C:C:C:C:CC(CN)N(C)C:C:C:C:C
-Drug1 contains C:CN(C)C(C)C1:C:C:C:C:C:1CC:C:C:C
-Drug1 contains CCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains CC(C:C:C:C:C:CC)N(C)C1:C:C:C:C:C:1
-Drug1 contains C:C(CC(C)N(C)CC:C:C:C:C):C:C:C:C
-Drug1 contains CN(CCN)C:C:C:C:C:CCC:C:C:C:C
-Drug1 contains CCC:C:C:C:C:CCC:C:C:C:C:CNC
-Drug1 contains CNC(C)C1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains C:C:C:C:C(:CCC1:C:C:C:C:C:1)N(C)CC
-Drug1 contains CC(C:C:C:C:C:C)N(C)C1:C:C:C:C:C:1
-Drug1 contains C:C:C:C:C:CCC1:C:C:C:C:C:1C(C)NC
-Drug1 contains CN(CCN)C:C:C:C:C:CCC:C:C:C:C:C
-Drug1 contains CC:C:C:C:C:CC(C)N(C)C:C:C:C:C:C
-Drug1 contains CC:C(:C:C:C:C)C(C)N(C)C1:C:C:C:C:C:1
-Drug1 contains CN1C2:C:C:C:C:C:2CC2:C:C:C:C:C:2C1CN
-Drug1 contains C:C:C:C:C(:CN(C)C)CC1:C:C:C:C:C:1
-Drug1 contains CC:C:C:C:C:CN(C)CC1:C:C:C:C:C:1
-Drug1 contains C:C(CC:C:C:C:C:CN(C)CCN):C:C:C
-Drug1 contains C:C:C:C:C:CN(C)CC1:C:C:C:C:C:1C
-Drug1 contains CC(C(:C:C:C):C(:C)C)N(C)C1:C:C:C:C:C:1
-Drug1 contains CCC:C:C:C:C:CCC:C:C:C:C:CNC
-Drug1 contains CCC:C:C:C:C:CCC:C:C:C:C:CNCN
-Drug1 contains CCCC(:C(CN):NCC):C(:C):C:C:C:CC
-Drug1 contains CC:C:C:C:C:CNC(C)C1:C:C:C:C:C:1
-Drug1 contains C:C:C:C(:CCC:C:C:C:C:CCCN)NCN
-Drug1 contains CC:C:C:C:CCCCCCCN(C)CCN
-Drug1 contains CCC:C:C:C:C:CC(C)N(C)C:C:C:C:C
-Drug1 contains CC(C(:C):C:C:C)N(C)C1:C:C:C:C:C:1C
-Drug1 contains CCC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains C:C:C:CC(CN)N(C)C1:C:C:C:C:C:1C
-Drug1 contains C:C:CC(CN)N(C)C1:C:C:C:C:C:1CC:C:C
-Drug1 contains CN(CC)C1:C:C:C:C:C:1CC:C:C:C:C:C
-Drug1 contains C:C:CN(C)C(C)C(:C):C(CC:C:C):C:C:C
-Drug1 contains CNC:C:C:C:C:CCC1:C:C:C:C:C:1CC
-Drug1 contains CNC1:C:C:C:C:C:1CC1:C:C:C:C:C:1
-Drug1 contains C:C:C:C:C:CCC1:C:C:C:C:C:1NCC
+Drug1 contains interrupted structure ccCCCCNCCCCN(S)Cccccc.ccccO
+Drug1 contains interrupted structure cO.cc.ccCNCCCCNCCCCccc
+Drug1 contains  structure ccCNCCCCNCCCCccccccO
+Drug1 contains  structure cCNCCCCNCCCCccccccO
+Drug1 contains interrupted structure cO.cc.ccCNCCCCNCCCCccc
+Drug1 contains  structure CNCCCCNCCCCccccccO
+Drug1 contains interrupted structure cO.cc.ccCNCCCCNCCCCccc
+Drug1 contains  structure ccccCN(S)CCCCNCCCCccccccO
+Drug1 contains  structure cccccCNCCCCNCCCCcccccc
+Drug1 contains  structure cCNCCCCNCCCCccccccO
+Drug1 contains  structure CNCCCCNCCCCccccccO
+Drug1 contains  structure CCCNCCCCNCcccccc[SH](=O)=O
+Drug1 contains  structure ccCNCCCCNCCCCccccccO
+Drug1 contains  structure CCCNCCCCNCcccccc[SH](=O)=O
+Drug1 contains  structure ccccccCCCCNCCCCNC(=O)cccccc
+Drug1 contains interrupted structure ccO.ccccCCCCNCCCCNCc
+Drug1 contains  structure NCCCCNCCCCccccccO
+Drug1 contains interrupted structure ccCCCCNCCCCN(S)Cccccc.ccO
+Drug1 contains  structure cccccCCCCNCCCCNC(=O)cccccc
+Drug1 contains interrupted structure ccc.cccCNCCCCNCCCCcccc
+Drug1 contains  structure cCNCCCCNCCCCccccccO
+Drug1 contains  structure CNCCCCNCCCCccccccO
+Drug1 contains interrupted structure CCCCNCCCCccccccO.NS
+Drug1 contains  structure ccccccC(=O)NCCCCNCCC
+Drug1 contains  structure ccccccC(=O)NCCCCNCCC

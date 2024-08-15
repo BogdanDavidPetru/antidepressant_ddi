@@ -36,9 +36,9 @@ class MCSReasoner:
                         if index_feature >= len(self.common_mcs_list):
                             print(f"Error: Invalid index {index_feature}")
                         else:
-                            fp.write(f'Second drug {contains} {self.common_mcs_list[index_feature]}\n')
+                            fp.write(f'Second drug {contains} a chemical structure like: {self.common_mcs_list[index_feature]}\n')
                     else:
-                        fp.write(f'First drug {contains} {self.common_mcs_list[feature_nr]}\n')
+                        fp.write(f'First drug {contains} a chemical structure like: {self.common_mcs_list[feature_nr]}\n')
 
 # Usage Example:
 
