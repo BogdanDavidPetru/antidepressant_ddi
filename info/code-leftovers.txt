@@ -70,3 +70,36 @@
 # print("Drugs without known interaction: ", len(drugs_without_interactions))
 # print(drugs_without_interactions)
 # print(drug_ids)
+
+drug_interaction_df_initial = pd.read_csv('./datasets/drug_interaction_train_test_antidepressants_multiclass.csv')
+drug_interaction_df_initial = drug_interaction_df_initial.iloc[:, 3:]  # remove first column which represents index
+
+drug_interaction_df = drug_interaction_df_initial[drug_interaction_df_initial['interaction'] != 0].reset_index(
+    drop=True)
+
+
+
+
+    def load_smiles():
+    smiles_list = {}
+    with open("./experimental.txt", 'r') as fp:
+        for mcs in fp:
+            mcs_strip = mcs.strip().split(',')
+            smiles_list[mcs_strip[0]] = mcs_strip[1]
+    return smiles_list
+
+def load_drugs():
+    data_dir = './drug-files/'
+    # drug_smarts_length_dir = {}
+    drug_smarts_list = []
+
+    for db_id in os.listdir(data_dir):
+        molecule_file = os.path.join(data_dir, db_id)
+        # print(molecule_file)
+        if os.path.isfile(molecule_file):
+            with Chem.SDMolSupplier(molecule_file) as suppl:
+                molecule = [x for x in suppl if x is not None]
+                mol = molecule[0]
+                smiles = Chem.MolToSmiles(mol)
+                drug_smarts_list.append(smiles)
+    return drug_smarts_list

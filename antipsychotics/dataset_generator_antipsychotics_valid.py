@@ -18,7 +18,7 @@ class Triplets:
 
 
 
-drug_name_file = './drug-files/info/drug_agent_list_drugbank.txt'
+drug_name_file = '../info/antipsychotics_drug_agent_list_drugbank.txt'
 
 drug_names = set()
 with open(drug_name_file, 'r') as fp:
@@ -27,7 +27,7 @@ with open(drug_name_file, 'r') as fp:
 
 interactions = []
 
-known_ddi_file = ('C:/Users/david.bogdan/master/disertatie/oregano/oregano-master/oregano-master/Integration'
+known_ddi_file = ('D:/faculta/oregano/oregano-master/oregano-master/Integration'
                   '/Integration V2.1/DrugBank/interaction_drugs_drugbank.tsv')
 
 DDI = pd.read_csv(known_ddi_file, sep="\t", engine="python", names=["subject", "predicate", "object"])
@@ -67,7 +67,7 @@ decrease_efficacy_interaction = set()
 
 another_interaction = set()
 
-filename = "drug_interaction_data_antidepressants.csv"
+filename = "drug_interaction_data_antipsychotics.csv"
 
 for ddi in DDI_list.list:
     if n % 10000 == 0:

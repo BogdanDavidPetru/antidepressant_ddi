@@ -1,0 +1,71 @@
+---------------------------threshold 16----------------------
+Accuracy Score from sklearn:  0.9561234329797492
+Hamming Loss:  0.04
+Confusion matrix
+[[ 262  183]
+ [ 181 7670]]
+Report:                precision    recall  f1-score   support
+
+           0       0.59      0.59      0.59       445
+           1       0.98      0.98      0.98      7851
+
+    accuracy                           0.96      8296
+   macro avg       0.78      0.78      0.78      8296
+weighted avg       0.96      0.96      0.96      8296
+---------------------------threshold 17----------------------
+--------------Random Forest-------------------
+Accuracy Score from sklearn:  0.969112893571172
+Hamming Loss:  0.03
+Confusion matrix
+[[ 213  123]
+ [ 135 7882]]
+Report:                precision    recall  f1-score   support
+
+           0       0.61      0.63      0.62       336
+           1       0.98      0.98      0.98      8017
+
+    accuracy                           0.97      8353
+   macro avg       0.80      0.81      0.80      8353
+weighted avg       0.97      0.97      0.97      8353
+---------------------------threshold 18----------------------
+Accuracy Score from sklearn:  0.9636058900993655
+Hamming Loss:  0.04
+Confusion matrix
+[[ 173  163]
+ [ 141 7876]]
+Report:                precision    recall  f1-score   support
+
+           0       0.55      0.51      0.53       336
+           1       0.98      0.98      0.98      8017
+
+    accuracy                           0.96      8353
+   macro avg       0.77      0.75      0.76      8353
+weighted avg       0.96      0.96      0.96      8353
+---------------------------threshold 19----------------------
+Accuracy Score from sklearn:  0.959894648629235
+Hamming Loss:  0.04
+Confusion matrix
+[[ 175  161]
+ [ 174 7843]]
+Report:                precision    recall  f1-score   support
+
+           0       0.50      0.52      0.51       336
+           1       0.98      0.98      0.98      8017
+
+    accuracy                           0.96      8353
+   macro avg       0.74      0.75      0.75      8353
+weighted avg       0.96      0.96      0.96      8353
+---------------------------threshold 20----------------------
+Accuracy Score from sklearn:  0.9247401247401248
+Hamming Loss:  0.08
+Confusion matrix
+[[  65   76]
+ [ 105 2159]]
+Report:                precision    recall  f1-score   support
+
+           0       0.38      0.46      0.42       141
+           1       0.97      0.95      0.96      2264
+
+    accuracy                           0.92      2405
+   macro avg       0.67      0.71      0.69      2405
+weighted avg       0.93      0.92      0.93      2405

@@ -2,19 +2,67 @@ import shutil
 import os
 import pandas as pd
 from rdkit import Chem
+from rdkit.Chem import rdFMCS, Draw
 
 # smarts = Chem.MolFromSmarts('[#7]-[#6]-[#6]1:[#6]:[#6]:[#6]:[#6]:[#6]:1')
 #
 # print(smarts)
 #
 # print(Chem.MolToSmiles(smarts))
+data_dir = './drug-files/'
+drug_smarts_length_dir = {}
 
-smiles1 = Chem.MolFromSmiles('NC1=NCC2N1C1=CC=CC=C1CC1=CC=CC=C21')
+for db_id in os.listdir(data_dir):
+    molecule_file = os.path.join(data_dir, db_id)
+    # print(molecule_file)
+    if os.path.isfile(molecule_file):
+        with Chem.SDMolSupplier(molecule_file) as suppl:
+            molecule = [x for x in suppl if x is not None]
+            mol = molecule[0]
+            smiles = Chem.MolToSmiles(mol)
+            drug_smarts_length_dir[smiles] = len(smiles)
 
-smiles2 = Chem.MolFromSmiles('ccc1[nH]cc(CCN(C)C)c1cc'.upper())#ccccc(cN(c)c)cc1:c:c:c:c:c:1
+drug_smarts_length_dir = dict(sorted(drug_smarts_length_dir.items(), key=lambda item: item[1], reverse=True))
+print(drug_smarts_length_dir)
+# mcs_dict = {}
+#
+# with open('test-mcs-count-bound.txt', 'r') as fp:
+#     index = 0
+#     for line in fp:
+#         split = line.split(" ")
+#         # print(split[1])
+#         mcs_dict[split[0]] = split[1]
+#
+# sorted_dict = dict(sorted(mcs_dict.items()))
 
-print(smiles2)
-print(Chem.MolToSmiles(smiles2))
+# print(sorted_dict)
+# smiles1 = Chem.MolFromSmiles('CN1CCC(CC1)C(=O)C1=CC=CC(NC(=O)C2=C(F)C=C(F)C=C2F)=N1')#'CN1CCC(CC1)C(=O)C1=CC=CC(NC(=O)C2=C(F)C=C(F)C=C2F)=N1')
+#
+# smiles2 = Chem.MolFromSmiles('O=C1N(CCCCNC[C@H]2CCC3=CC=CC=C3O2)S(=O)(=O)C2=CC=CC=C12')#'O=C1N(CCCCNC[C@H]2CCC3=CC=CC=C3O2)S(=O)(=O)C2=CC=CC=C12')#ccccc(cN(c)c)cc1:c:c:c:c:c:1
+#
+# print(smiles1)
+# print(smiles2)
+#
+# mcs = rdFMCS.FindMCS([smiles1, smiles2])
+#
+# smarts = Chem.MolFromSmarts(mcs.smartsString)
+# match = smiles1.GetSubstructMatch(smarts)
+# submol = Chem.PathToSubmol(smiles1, match)
+# submol_smiles = Chem.MolToSmiles(submol)
+# print(mcs.smartsString)
+# print(submol_smiles)
+# print(smiles1.HasSubstructMatch(submol))
+#
+# match2 = smiles2.GetSubstructMatch(smarts)
+# submol2 = Chem.PathToSubmol(smiles2, match2)
+# submol_smiles2 = Chem.MolToSmiles(submol2)
+#
+# # Chem.Compute2DCoords(smarts)
+# drawing = Draw.MolsToGridImage([submol2])
+#
+# drawing.save('mcs-smarts-test-d2.png')
+#
+# print(submol_smiles2)
 # smarts = Chem.MolToSmarts(smiles2)
 #
 # print(smiles1.HasSubstructMatch(smiles2))
@@ -91,40 +139,40 @@ print(Chem.MolToSmiles(smiles2))
 #
 # print('Not Copied: ', len(not_copied_drug_names))
 # print(not_copied_drug_names)
-drug_interaction_df = pd.read_csv('drug_interaction_train_test_antidepressants_multiclass.csv')
-
-drug_interaction_only_df = drug_interaction_df[drug_interaction_df['interaction'] != 0].reset_index(drop=True)
-
-print(drug_interaction_only_df.info())
-
-drug1_features = drug_interaction_only_df.iloc[:, 2:2892]
-drug2_features = drug_interaction_only_df.iloc[:, 2893:5783]
-
-# print(drug_interaction_only_df.iloc[1302:1303, :])
-def count_common_values(row1, row2):
-    return sum(row1 == row2)
-
-
-# Apply the function row-wise and store the result in a new column
-common_values = [count_common_values(row1, row2) for row1, row2 in zip(drug1_features.values, drug2_features.values)]
-
-# Create a new DataFrame to store the results
-result_df = pd.DataFrame({'Common Values': common_values})
-
-print(result_df.info())
-
-nr_substructures_drug1 = pd.DataFrame({'Drug 1 total substructures': drug1_features.sum(axis=1)})
-nr_substructures_drug2 = pd.DataFrame({'Drug 2 total substructures': drug2_features.sum(axis=1)})
-
-print(nr_substructures_drug1.info())
-print(nr_substructures_drug2.info())
-
-final_set = result_df.join(nr_substructures_drug1).join(nr_substructures_drug2)
-
-print(pd.DataFrame({'interaction': drug_interaction_only_df['interaction']}).info())
-final_set['interaction'] = drug_interaction_only_df['interaction']
-
-print(final_set.head(10))
-
-final_set.to_csv('simplified_antidepressants_interaction_multiclass.csv')
+# drug_interaction_df = pd.read_csv('drug_interaction_train_test_antidepressants_multiclass.csv')
+#
+# drug_interaction_only_df = drug_interaction_df[drug_interaction_df['interaction'] != 0].reset_index(drop=True)
+#
+# print(drug_interaction_only_df.info())
+#
+# drug1_features = drug_interaction_only_df.iloc[:, 2:2892]
+# drug2_features = drug_interaction_only_df.iloc[:, 2893:5783]
+#
+# # print(drug_interaction_only_df.iloc[1302:1303, :])
+# def count_common_values(row1, row2):
+#     return sum(row1 == row2)
+#
+#
+# # Apply the function row-wise and store the result in a new column
+# common_values = [count_common_values(row1, row2) for row1, row2 in zip(drug1_features.values, drug2_features.values)]
+#
+# # Create a new DataFrame to store the results
+# result_df = pd.DataFrame({'Common Values': common_values})
+#
+# print(result_df.info())
+#
+# nr_substructures_drug1 = pd.DataFrame({'Drug 1 total substructures': drug1_features.sum(axis=1)})
+# nr_substructures_drug2 = pd.DataFrame({'Drug 2 total substructures': drug2_features.sum(axis=1)})
+#
+# print(nr_substructures_drug1.info())
+# print(nr_substructures_drug2.info())
+#
+# final_set = result_df.join(nr_substructures_drug1).join(nr_substructures_drug2)
+#
+# print(pd.DataFrame({'interaction': drug_interaction_only_df['interaction']}).info())
+# final_set['interaction'] = drug_interaction_only_df['interaction']
+#
+# print(final_set.head(10))
+#
+# final_set.to_csv('simplified_antidepressants_interaction_multiclass.csv')
 

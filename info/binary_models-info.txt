@@ -1,3 +1,27 @@
+current best performing parameters {
+{'bootstrap': True
+'ccp_alpha': 0.0
+'class_weight': {0: 0.81
+1: 0.18999999999999995}
+'criterion': 'gini'
+'max_depth': 20
+'max_features': 'sqrt'
+'max_leaf_nodes': None
+'max_samples': None
+'min_impurity_decrease': 0.0
+'min_samples_leaf': 1
+'min_samples_split': 2
+'min_weight_fraction_leaf': 0.0
+'monotonic_cst': None
+'n_estimators': 200
+'n_jobs': None
+'oob_score': False
+'random_state': 42
+'verbose': 0
+'warm_start': False}
+
+}
+
 Binary classification structural dataset - random forests
 1. with normal dataset -> see screenshots
 2. SMOTE
@@ -49,12 +73,31 @@ Confusion matrix
 Report:                precision    recall  f1-score   support
 
            0       0.17      0.77      0.28       336
-           1       0.99      0.85      0.91      8017
-
+           1       0.99      0.85      0.91      801
     accuracy                           0.84      8353
    macro avg       0.58      0.81      0.60      8353
 weighted avg       0.96      0.84      0.89      8353
 
+
+-------------------initial dataset------
+simple random forest
+
+--------------Random Forest-------------------
+Accuracy Score from sklearn:  0.9687537411708368
+Hamming Loss:  0.03
+Confusion matrix
+[[ 173  163]
+ [  98 7919]]
+Report:                precision    recall  f1-score   support
+
+           0       0.64      0.51      0.57       336
+           1       0.98      0.99      0.98      8017
+
+    accuracy                           0.97      8353
+   macro avg       0.81      0.75      0.78      8353
+weighted avg       0.97      0.97      0.97      8353
+
+----------------------------------
 ----------------
 Binary classification subgraph dataset
 

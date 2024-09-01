@@ -109,12 +109,13 @@ for row_nr, row in enumerate(drug_interaction_file_reader):
             print('Interaction skipped cause sdf file not found: ', drug1, drug2)
     n += 1
 
-train_test_file_name = "drug_interaction_train_test_antidepressants_ablation_19.csv"
+train_test_file_name = "drug_interaction_train_test_antidepressants.csv"
 data.to_csv(train_test_file_name, sep=',', encoding='utf-8')
 print(data.head(10))
 
 
 ## To unify different datasets
+# train_test_file_name = "drug_interaction_train_test_antidepressants_ablation_19.csv"
 
 # train_test_file_name = "drug_interaction_train_test_antidepressants_ablation_first10k_16.csv"
 # train_test_file_name_2 = "drug_interaction_train_test_antidepressants_ablation_first20k_16.csv"

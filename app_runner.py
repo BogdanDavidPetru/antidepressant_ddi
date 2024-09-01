@@ -2,7 +2,6 @@ import sys
 
 import joblib
 import numpy as np
-import pandas as pd
 from rdkit import Chem
 
 from antidepressant_predictor_reasoner import MCSReasoner
@@ -11,9 +10,11 @@ drug1_structural_information_file = "./output/drug1-structural-information.txt"
 drug2_structural_information_file = "./output/drug2-structural-information.txt"
 explanations_file = './output/explanations.txt'
 
+
 def error_exit(cause):
     print(cause)
     sys.exit(1)
+
 
 def load_mcs():
     common_mcs_molecule_list = []
@@ -34,9 +35,8 @@ def main():
     common_chemical_substructures_list = mcs_tuple[0]
     # second_drug_smiles = 'CN1CCC(CC1)=C1C2=CC=CC=C2C=CC2=CC=CC=C12'  # 'CN1CCC(CC1)C(=O)C1=CC=CC(NC(=O)C2=C(F)C=C(F)C=C2F)=N1'#input("Enter the first Drug smiles string: ")
     second_drug_smiles = 'CN1CCC(CC1)C(=O)C1=CC=CC(NC(=O)C2=C(F)C=C(F)C=C2F)=N1'  # 'CN1CCC(CC1)C(=O)C1=CC=CC(NC(=O)C2=C(F)C=C(F)C=C2F)=N1'#input("Enter the first Drug smiles string: ")
-
-    # Read the second string from standard input
-    # first_drug_smiles = 'NC1=NCC2N1C1=CC=CC=C1CC1=CC=CC=C21'  # 'O=C1N(CCCCNC[C@H]2CCC3=CC=CC=C3O2)S(=O)(=O)C2=CC=CC=C12'#input("Enter the second Drug smiles string: ")
+    # # Read the second string from standard input
+    # # first_drug_smiles = 'NC1=NCC2N1C1=CC=CC=C1CC1=CC=CC=C21'  # 'O=C1N(CCCCNC[C@H]2CCC3=CC=CC=C3O2)S(=O)(=O)C2=CC=CC=C12'#input("Enter the second Drug smiles string: ")
     first_drug_smiles = 'O=C1N(CCCCNC[C@H]2CCC3=CC=CC=C3O2)S(=O)(=O)C2=CC=CC=C12'  # 'O=C1N(CCCCNC[C@H]2CCC3=CC=CC=C3O2)S(=O)(=O)C2=CC=CC=C12'#input("Enter the second Drug smiles string: ")
 
     print(f'First drug: {first_drug_smiles}')
@@ -64,7 +64,7 @@ def main():
                 match = drug1.GetSubstructMatch(substructure)
                 submol = Chem.PathToSubmol(drug1, match)
                 submol_smiles = Chem.MolToSmiles(submol)
-                interrupted = "interrupted" if ('.' in submol_smiles)  else ""
+                interrupted = "interrupted" if ('.' in submol_smiles) else ""
                 file1.write(f'Drug1 contains {interrupted} structure {submol_smiles}\n')
             else:
                 prediction_input.append(0)
@@ -85,7 +85,8 @@ def main():
 
     prediction = binary_predictor.predict_proba(reshape)
     result = prediction[0]
-    print(f"Prediction result: {result[0] * 100:1f}% chances of having no interaction, {result[1] * 100:1f}% chances of having an interaction")
+    print(
+        f"Prediction result: {result[0] * 100:1f}% chances of having no interaction, {result[1] * 100:1f}% chances of having an interaction")
 
     print(f"Please find explanations in {explanations_file}")
     print(f"Please find drug1 chemical structural information in {drug1_structural_information_file}")

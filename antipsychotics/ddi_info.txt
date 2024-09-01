@@ -1,0 +1,8 @@
+Number of drugs taken into consideration for dataset:  97
+Interaction with increased activity:  1229
+Interaction with decreased activity:  0
+Interaction with increased effect:  2752
+Interaction with decreased effect:  0
+Interaction with increased efficacy:  0
+Interaction with decreased efficacy:  0
+Drugs without interaction:  {'Etazolate', 'Hydromethylthionine mesylate', 'Norclozapine', 'Spiperone'}

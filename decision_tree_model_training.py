@@ -8,8 +8,8 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import StratifiedKFold
 from sklearn.tree import DecisionTreeClassifier
 
-train_drug_interaction_df = pd.read_csv('./datasets/train_data_structural.csv')  # './datasets/train_data_graphs.csv')
-test_drug_interaction_df = pd.read_csv('./datasets/test_data_structural.csv')  # './datasets/test_data_graphs.csv')
+train_drug_interaction_df = pd.read_csv('./datasets/train_data_structural_binary.csv')  # './datasets/train_data_graphs.csv')
+test_drug_interaction_df = pd.read_csv('./datasets/test_data_structural_binary.csv')  # './datasets/test_data_graphs.csv')
 
 print("----------Input Train Data Frame info-------------")
 input_train_drug_interaction_df = train_drug_interaction_df.iloc[:, :-1]
@@ -81,13 +81,13 @@ print(conf_matrix)
 report = classification_report(y_ts_arr, pred_rf)
 print('Report: ', report)
 
-print("--------------Random Forest with custom class weights-------------------")
+print("--------------Random Forest with custom hyperparams GridSearch-------------------")
 
 weights = np.linspace(0.70, 0.95, 30)
 
 # Creating a dictionary grid for grid search
 param_grid = {
-    'class_weight': [{0: x, 1: 1.0 - x} for x in weights],
+    # 'class_weight': [{0: x, 1: 1.0 - x} for x in weights],
     'n_estimators': [100, 200],
     'max_depth': [None, 10, 20, 30],
     'min_samples_split': [2, 5, 10],
@@ -96,10 +96,6 @@ param_grid = {
 }
 
 rf_classifier = RandomForestClassifier(random_state=42)
-
-# Initialize GridSearchCV
-# grid_search = GridSearchCV(estimator=rf_classifier, param_grid=param_grid, cv=StratifiedKFold(), scoring='f1', n_jobs=-1, verbose=2)
-
 
 gridsearch = GridSearchCV(estimator=rf_classifier,
                           param_grid=param_grid,

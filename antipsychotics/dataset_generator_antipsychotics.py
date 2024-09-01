@@ -14,6 +14,7 @@ for db_id in os.listdir(data_dir):
 
 interactions = []
 
+
 known_DDI_file = ('C:/Users/david.bogdan/master/disertatie/example-ddi-dfi-prediction/deepddi/data/DrugBank_known_ddi'
                   '.txt')
 
